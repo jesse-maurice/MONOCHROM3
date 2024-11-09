@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+@font-face{
+  font-family: "High Tide Sans";
+  src: local('High Tide Sans'),
+  url("/src/assets/fonts/HighTide\ Sans.otf") format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face{
+  font-family: "High Tide";
+  src: local('High Tide'),
+  url("/src/assets/fonts/HighTide.otf") format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.w-12:hover {
+  background-color: #ffffff;
+}
+
+.w-12:hover i {
+  color: #000000;
+}
+
+
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+h4 {
+  animation: marquee 10s linear infinite;
+}
+
+
+
+
+
+.tooltip-arrow {
+  position: absolute;
+  top: -10px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid white; /* Adjust color as needed */
+}
+
+
+
+
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
